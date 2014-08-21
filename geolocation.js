@@ -1,3 +1,4 @@
+// Having some scope issues, it appears I can't access $scope from the callback function passed to watchPosition. I don't know why, if you do, drop me a line or make an issue talking about it.
 angular.module('myapp', [])
 .controller('MyController', ['$scope', function($scope) {
 console.log("Hello");
@@ -17,3 +18,16 @@ console.log($scope.longitude);
   /* geolocation IS NOT available */
 }
 }]);
+
+
+
+/*
+JSON result will be this for my service when it's created
+ latitude
+    longitude
+    altitude
+    accuracy
+    altitudeAccuracy
+    heading
+    speed
+*/
